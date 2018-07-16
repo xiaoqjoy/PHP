@@ -1,0 +1,27 @@
+PHP 换行符 PHP_EOL
+
+
+排就是行,行是水平方向的一横行，横着的就是一行
+
+列是垂直方向上的一竖列，竖着的就是一列
+
+https://www.cnblogs.com/ayyl/p/5978418.html
+
+MYSQL 安装向导
+
+
+
+http://cdn.mysql.com//Downloads/MySQLInstaller/mysql-installer-community-5.7.16.0.msi
+
+SQL下载
+
+
+3307  
+
+
+root root  账号密码
+
+
+SQL 插入语句
+
+INSERT INTO `test`.`user` (`id`, `name`, `phone`, `email`) VALUES ('8989', 'yufa', '75448548', '154855215@qq.com');
