@@ -102,4 +102,66 @@ class Person{
     private $sex  = '女';
 }
 
+$arr = [33,34,67,'abc'];
+echo $arr[1];
+
+$cars = ["Volvo","BMW","Toyota"];   //数值数组
+
+$age = ["Peter"=>"3234325","Ben"=>"37","Joe"=>"43"];    //关联数组   指定的键的数组
+
+
+foreach($age as $x=>$x_value)
+{
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+
+echo var_dump($age);
+
+$arrlength = count($cars);
+
+echo var_dump($cars);
+
+for($x=0;$x<$arrlength;$x++)
+{
+    echo $cars[$x];
+    echo "<br>";
+}
+
+
+$q = isset($_GET['q'])? htmlspecialchars($_GET['q']) : '';
+var_dump($q);
+echo '<br>';
+if($q) {
+    if($q =='RUNOOB') {
+        echo '菜鸟教程<br>http://www.runoob.com';
+    } else if($q =='GOOGLE') {
+        echo 'Google 搜索<br>http://www.google.com';
+    } else if($q =='TAOBAO') {
+        echo '淘宝<br>http://www.taobao.com';
+    }
+} else {
+    ?>
+    <form action="" method="get">
+        <select name="q">
+            <option value="">选择一个站点:</option>
+            <option value="RUNOOB">Runoob</option>
+            <option value="GOOGLE">Google</option>
+            <option value="TAOBAO">Taobao</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+    <?php
+}
+
 ?>
+
+
+<!--
+sort() - 对数组进行升序排列
+rsort() - 对数组进行降序排列
+asort() - 根据关联数组的值，对数组进行升序排列
+ksort() - 根据关联数组的键，对数组进行升序排列
+arsort() - 根据关联数组的值，对数组进行降序排列
+krsort() - 根据关联数组的键，对数组进行降序排列
+-->

@@ -25,10 +25,14 @@ echo "<br>";
 $sql = "SELECT id, name, age, time, smoking FROM user";
 $result = $conn->query($sql);
 
+var_dump($result);
 
-while($row = $result->fetch_assoc()) {
+while($row = $result->fetch_assoc()){
     echo "id: " . $row["id"]. " - name: " . $row["name"]. "-age:" .$row["age"]."-time:" .$row["time"]."-smoking:" .$row["smoking"]."<br>";
+    //var_dump($row);
 }
+
+
 /*if ($result->num_rows > 0) {
     // 输出数据
 
